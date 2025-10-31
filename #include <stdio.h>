@@ -1,0 +1,41 @@
+#include <stdio.h>
+
+int main() {
+    // --- MOVIMENTOS DE OUTRAS PEÇAS (exemplo fictício do desafio anterior) ---
+    printf("Movimentos anteriores:\n");
+    printf("Cima\n");
+    printf("Direita\n");
+    printf("Baixo\n");
+
+    // --- Separação visual ---
+    printf("\n");
+
+    // --- MOVIMENTO DO CAVALO ---
+    printf("Movimento do Cavalo:\n");
+
+    // O cavalo se move em "L": duas casas para baixo e uma casa para a esquerda
+    // Definindo as quantidades como constantes
+    const int movimentoBaixo = 2;
+    const int movimentoEsquerda = 1;
+
+    // Usaremos dois loops aninhados: um for e um while
+    // O loop externo (for) controla o movimento para baixo
+    // O loop interno (while) controla o movimento para a esquerda
+
+    // Loop para o movimento "para baixo"
+    for (int i = 0; i < movimentoBaixo; i++) {
+        printf("Baixo\n");
+    }
+
+    // Linha em branco apenas para separar visualmente os movimentos (opcional)
+    // printf("\n");
+
+    // Agora o movimento "para a esquerda" usando while
+    int j = 0;
+    while (j < movimentoEsquerda) {
+        printf("Esquerda\n");
+        j++;
+    }
+
+    return 0;
+}
